@@ -1,0 +1,165 @@
+/* ------------------------------------------------------------------
+   Xu Hu — personal homepage
+   Minimal academic style inspired by the layout of jykoh.com
+------------------------------------------------------------------ */
+
+:root {
+  --text: #1a1a1a;
+  --muted: #6b6b6b;
+  --link: #1772d0;
+  --link-hover: #0d4d96;
+  --rule: #e6e6e6;
+  --max: 720px;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  padding: 48px 20px 80px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--text);
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap { max-width: var(--max); margin: 0 auto; }
+
+/* ---------- Header ---------- */
+.name {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 0 0 6px;
+}
+.name a { color: var(--text); text-decoration: none; }
+
+.contact {
+  font-size: 0.92rem;
+  color: var(--muted);
+  margin: 0 0 4px;
+}
+.contact a { color: var(--link); text-decoration: none; }
+.contact a:hover { text-decoration: underline; }
+.sep { color: #c7c7c7; margin: 0 8px; }
+
+nav.tabs {
+  margin: 14px 0 6px;
+  font-size: 0.98rem;
+}
+nav.tabs a { color: var(--link); text-decoration: none; }
+nav.tabs a:hover { text-decoration: underline; }
+nav.tabs .slash { color: #bdbdbd; margin: 0 6px; }
+nav.tabs .here { color: var(--text); font-weight: 600; }
+
+hr.rule { border: none; border-top: 1px solid var(--rule); margin: 22px 0; }
+
+/* ---------- Intro / photo ---------- */
+.intro { display: flex; gap: 26px; align-items: flex-start; margin-top: 26px; }
+.intro .photo {
+  flex: 0 0 210px;
+  width: 210px;
+}
+.intro .photo img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+.intro .photo .caption {
+  font-size: 0.78rem;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 8px;
+}
+.intro .bio { flex: 1 1 auto; }
+.intro .bio p { margin: 0 0 14px; }
+.intro .bio p:first-child { margin-top: 0; }
+
+a { color: var(--link); }
+a:hover { color: var(--link-hover); }
+
+/* ---------- News ---------- */
+section { margin-top: 38px; }
+h2.section {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0 0 14px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--rule);
+}
+
+ul.news { list-style: none; margin: 0; padding: 0; }
+ul.news li {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 11px;
+  font-size: 0.97rem;
+}
+ul.news .date {
+  flex: 0 0 92px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+ul.news .what { flex: 1 1 auto; }
+
+details.older { margin-top: 14px; }
+details.older summary {
+  cursor: pointer;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+details.older ul.news { margin-top: 12px; }
+
+/* ---------- Publications ---------- */
+ol.pubs { margin: 0; padding-left: 0; list-style: none; counter-reset: pub; }
+ol.pubs li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 20px;
+  font-size: 0.97rem;
+}
+ol.pubs li::before {
+  counter-increment: pub;
+  content: counter(pub) ".";
+  position: absolute;
+  left: 0;
+  color: var(--muted);
+}
+.pub-title { font-weight: 600; }
+.pub-authors { }
+.pub-authors .me { font-weight: 700; }
+.pub-venue { color: var(--muted); font-style: italic; }
+.pub-links { font-size: 0.9rem; }
+.pub-links a { margin-right: 10px; }
+.badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #8a5a00;
+  background: #fdf2dc;
+  border: 1px solid #f0d9a6;
+  border-radius: 4px;
+  padding: 1px 6px;
+  vertical-align: middle;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  margin-top: 56px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 560px) {
+  body { padding-top: 32px; font-size: 16px; }
+  .intro { flex-direction: column; gap: 18px; }
+  .intro .photo { width: 60%; flex-basis: auto; align-self: flex-start; }
+  ul.news li { flex-direction: column; gap: 2px; }
+  ul.news .date { flex-basis: auto; font-size: 0.85rem; }
+}

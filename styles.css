@@ -101,7 +101,7 @@ ul.news li {
   font-size: 0.97rem;
 }
 ul.news .date {
-  flex: 0 0 92px;
+  flex: 0 0 108px;
   color: var(--muted);
   font-variant-numeric: tabular-nums;
 }

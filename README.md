@@ -1,9 +1,9 @@
 # Xu Hu — personal homepage
 
-A minimal academic homepage (layout inspired by jykoh.com). Plain HTML/CSS, no build step.
+A responsive academic homepage with top navigation, a profile sidebar, and publication lists. Plain HTML/CSS, no build step.
 
 ## Files
-- `index.html` — home (intro, photo, education, research experience, honors, news)
+- `index.html` — home (bio, education, research experience, honors, news, publications)
 - `publications.html` — publication list
 - `styles.css` — all styling
 - `profile.jpg` — profile photo

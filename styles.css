@@ -106,6 +106,8 @@ ul.news .date, ul.timeline .date {
   font-variant-numeric: tabular-nums;
 }
 ul.news .what, ul.timeline .what { flex: 1 1 auto; }
+.location { color: var(--muted); }
+.faculty-name { white-space: nowrap; }
 
 /* ---------- Publications ---------- */
 ol.pubs { margin: 0; padding-left: 0; list-style: none; counter-reset: pub; }

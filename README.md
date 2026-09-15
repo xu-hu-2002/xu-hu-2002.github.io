@@ -3,7 +3,7 @@
 A minimal academic homepage (layout inspired by jykoh.com). Plain HTML/CSS, no build step.
 
 ## Files
-- `index.html` — home (intro, photo, news)
+- `index.html` — home (intro, photo, education, research experience, honors, news)
 - `publications.html` — publication list
 - `styles.css` — all styling
 - `profile.jpg` — profile photo

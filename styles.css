@@ -83,7 +83,7 @@ hr.rule { border: none; border-top: 1px solid var(--rule); margin: 22px 0; }
 a { color: var(--link); }
 a:hover { color: var(--link-hover); }
 
-/* ---------- News ---------- */
+/* ---------- Sections / timelines ---------- */
 section { margin-top: 38px; }
 h2.section {
   font-size: 1.15rem;
@@ -93,27 +93,19 @@ h2.section {
   border-bottom: 2px solid var(--rule);
 }
 
-ul.news { list-style: none; margin: 0; padding: 0; }
-ul.news li {
+ul.news, ul.timeline { list-style: none; margin: 0; padding: 0; }
+ul.news li, ul.timeline li {
   display: flex;
   gap: 14px;
   margin-bottom: 11px;
   font-size: 0.97rem;
 }
-ul.news .date {
-  flex: 0 0 108px;
+ul.news .date, ul.timeline .date {
+  flex: 0 0 120px;
   color: var(--muted);
   font-variant-numeric: tabular-nums;
 }
-ul.news .what { flex: 1 1 auto; }
-
-details.older { margin-top: 14px; }
-details.older summary {
-  cursor: pointer;
-  color: var(--muted);
-  font-size: 0.92rem;
-}
-details.older ul.news { margin-top: 12px; }
+ul.news .what, ul.timeline .what { flex: 1 1 auto; }
 
 /* ---------- Publications ---------- */
 ol.pubs { margin: 0; padding-left: 0; list-style: none; counter-reset: pub; }
@@ -160,6 +152,6 @@ footer {
   body { padding-top: 32px; font-size: 16px; }
   .intro { flex-direction: column; gap: 18px; }
   .intro .photo { width: 60%; flex-basis: auto; align-self: flex-start; }
-  ul.news li { flex-direction: column; gap: 2px; }
-  ul.news .date { flex-basis: auto; font-size: 0.85rem; }
+  ul.news li, ul.timeline li { flex-direction: column; gap: 2px; }
+  ul.news .date, ul.timeline .date { flex-basis: auto; font-size: 0.85rem; }
 }

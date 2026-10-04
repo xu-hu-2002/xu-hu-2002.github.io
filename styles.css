@@ -189,6 +189,22 @@ ol.pubs li::before {
   vertical-align: 2px;
 }
 
+/* Research agenda table */
+.agenda-wrap { margin: 0; overflow-x: auto; }
+table.agenda { width: 100%; border-collapse: collapse; font-size: 14.5px; line-height: 1.5; }
+table.agenda th, table.agenda td {
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+table.agenda thead th { background: #f4f6f7; color: #39444b; font-weight: 700; }
+table.agenda tbody th { width: 23%; font-weight: 700; }
+table.agenda td.work { width: 42%; }
+table.agenda td.work p { margin: 0 0 7px; }
+table.agenda td.work p:last-child { margin-bottom: 0; }
+table.agenda .status { color: var(--muted); }
+
 footer {
   margin-top: 42px;
   padding-top: 17px;
@@ -234,6 +250,13 @@ footer {
   .date { display: block; font-size: 13px; margin-bottom: 1px; }
   ol.pubs li { padding-left: 31px; }
   .pub-title { font-size: 15.5px; }
+  table.agenda thead { display: none; }
+  table.agenda, table.agenda tbody, table.agenda tr, table.agenda th, table.agenda td { display: block; }
+  table.agenda tbody th, table.agenda td.work { width: auto; }
+  table.agenda tr { margin: 0 0 10px; border: 1px solid var(--line); }
+  table.agenda tr:last-child { margin-bottom: 0; }
+  table.agenda th, table.agenda td { border: 0; padding: 7px 12px; }
+  table.agenda tbody th { background: #f4f6f7; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

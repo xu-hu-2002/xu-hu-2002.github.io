@@ -109,6 +109,7 @@ strong { font-weight: 700; }
 .profile h1 { margin: 0 0 5px; font-size: 23px; line-height: 1.2; }
 .profile-role { margin: 0 0 18px; line-height: 1.42; }
 .profile-focus { margin: 0 0 17px; color: #626a70; }
+.profile-seeking { margin: 0 0 15px; color: #c62828; font-weight: 700; line-height: 1.45; }
 .profile-links { margin: 0; padding: 0; list-style: none; font-size: 14px; }
 .profile-links li { margin: 0 0 7px; overflow-wrap: anywhere; }
 .profile-links li span { display: inline-block; width: 19px; color: #66747b; font-size: 16px; }
@@ -261,6 +262,7 @@ footer {
   .profile h1 { font-size: 21px; }
   .profile-role { margin-bottom: 9px; }
   .profile-focus { display: none; }
+  .profile-seeking { margin-bottom: 8px; font-size: 14px; }
   .profile-links { display: flex; flex-wrap: wrap; gap: 0 12px; font-size: 13px; }
   .profile-links li { margin-bottom: 2px; }
   .header-inner { padding: 0 20px; }

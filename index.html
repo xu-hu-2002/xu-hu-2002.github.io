@@ -114,7 +114,7 @@
                 <th scope="row">Benchmarks for CUA</th>
                 <td class="work">
                   <p><strong>CUA-Recovery</strong> <span class="status">(under review at ICLR)</span>: a long-horizon robustness benchmark for computer-use agents.</p>
-                  <p><strong>PersonaCUABench</strong> <span class="status">(under review at NAACL)</span>: the first benchmark to evaluate how persona influences agent task performance.</p>
+                  <p><a href="https://arxiv.org/abs/2610.22990"><strong>PersonaCUABench</strong></a> <span class="status">(under review at NAACL)</span>: the first benchmark to evaluate how persona influences agent task performance.</p>
                 </td>
                 <td>How robust are computer-use agents over long horizons, and how much does the user's persona change task performance?</td>
               </tr>
@@ -129,9 +129,10 @@
               <tr>
                 <th scope="row">Agent memory</th>
                 <td class="work">
+                  <p><a href="https://arxiv.org/abs/2610.22959"><strong>SAFE-Mem</strong></a> <span class="status">(under review)</span>: a secure memory framework that labels every stored claim with its kind, authority, and scope, and retrieves it only for the uses its source permits.</p>
                   <p><a href="https://arxiv.org/abs/2602.19320"><strong>Anatomy of Agentic Memory</strong></a> <span class="status">(under review)</span>: a taxonomy and empirical analysis of agentic memory systems and how they are evaluated.</p>
                 </td>
-                <td>Where do current agentic memory systems, and the ways we evaluate them, fall short?</td>
+                <td>Where do current agentic memory systems, and the ways we evaluate them, fall short, and how can memory block untrusted content without losing legitimate information?</td>
               </tr>
             </tbody>
           </table>
@@ -199,6 +200,24 @@
     <section id="news">
       <h2 class="section"><span aria-hidden="true">🔥</span> News</h2>
       <ul class="news" id="news-list">
+        <li>
+          <span class="date">Oct 2026</span>
+          <span class="what">New preprint:
+            <a href="https://arxiv.org/abs/2610.22990">PersonaCUABench</a> —
+            the same 74 computer-use tasks requested by 44 personas in their own words; task completion drops by 36%
+            compared with the original instructions.
+            <a href="https://matraix.ai/research/persona-cua.html">Project page</a> and
+            <a href="https://github.com/MatrAIx-ai/PersonaCUABench">code</a> are available.
+          </span>
+        </li>
+        <li>
+          <span class="date">Oct 2026</span>
+          <span class="what">New preprint:
+            <a href="https://arxiv.org/abs/2610.22959">SAFE-Mem</a> —
+            secure agentic memory with fine-grained authority and governance-aware retrieval.
+            <a href="https://github.com/LVenum/SAFE-Mem">Code</a> is available.
+          </span>
+        </li>
         <li>
           <span class="date">Oct 2026</span>
           <span class="what">Happy to contribute to and share this interesting work:
@@ -295,6 +314,44 @@
         <a href="https://scholar.google.com/citations?user=4LvTffEAAAAJ&amp;hl=en">Google Scholar</a>.
       </p>
       <ol class="pubs">
+
+        <li class="has-fig">
+          <a class="pub-fig" href="figures/persona-cua-bench.jpg"><img src="figures/persona-cua-bench.jpg" width="1100" height="811" loading="lazy" alt="Overview of PersonaCUABench: who asks, interaction, and scoring" /></a>
+          <div class="pub-body">
+            <span class="pub-title"><a href="https://arxiv.org/abs/2610.22990">PersonaCUABench: Benchmarking Computer-Use Agents
+              Serving Diverse Personas.</a></span>
+            <span class="badge">under review</span><br />
+            <span class="pub-authors">
+              Haoming Li<sup>†</sup>, Defu Cao<sup>†</sup>, <span class="me">Xu Hu</span><sup>†</sup>, Yingtao Luo,
+              Yiyang Wang, Xianghe Xu, Jiashu He, Wanting Jiang, Yifan Zhang, Yunhan Zhao, Siyang Wu,
+              Chen Yang, Haixin Wang, Zheyuan Deng, Taoran Li, Jingwen Zhang, Zhejian Peng, Shushu Liang,
+              Yue Zhao, Bingzhe Li, Feng Chen, Yifan Wang, Jintao Huang, Yijun Wang, Yuexing Hao,
+              Xiaomin Li.</span><br />
+            <span class="pub-venue">arXiv preprint arXiv:2610.22990</span>, 2026.<br />
+            <span class="pub-links">
+              <a href="https://arxiv.org/abs/2610.22990">arXiv</a>
+              <a href="https://matraix.ai/research/persona-cua.html">project page</a>
+              <a href="https://github.com/MatrAIx-ai/PersonaCUABench">code</a>
+            </span>
+          </div>
+        </li>
+
+        <li class="has-fig">
+          <a class="pub-fig" href="figures/safe-mem.jpg"><img src="figures/safe-mem.jpg" width="1100" height="622" loading="lazy" alt="Overview of SAFE-Mem: governance labels, memory graph, and governance-aware retrieval" /></a>
+          <div class="pub-body">
+            <span class="pub-title"><a href="https://arxiv.org/abs/2610.22959">SAFE-Mem: Secure Agentic Memory with Fine-Grained Authority
+              and Governance-Aware Retrieval.</a></span>
+            <span class="badge">under review</span><br />
+            <span class="pub-authors">
+              Haoming Li, Dingyi Kang, <span class="me">Xu Hu</span>, Jinxin Yang, Zhu Xu, Chenru Wang,
+              Yi Ge, Miao Yin, Guanpeng Li, Feng Chen, Bingzhe Li.</span><br />
+            <span class="pub-venue">arXiv preprint arXiv:2610.22959</span>, 2026.<br />
+            <span class="pub-links">
+              <a href="https://arxiv.org/abs/2610.22959">arXiv</a>
+              <a href="https://github.com/LVenum/SAFE-Mem">code</a>
+            </span>
+          </div>
+        </li>
 
         <li class="has-fig">
           <a class="pub-fig" href="figures/cua-recovery.jpg"><img src="figures/cua-recovery.jpg" width="1100" height="732" loading="lazy" alt="Overview of the CUA-Recovery benchmark and its construction" /></a>

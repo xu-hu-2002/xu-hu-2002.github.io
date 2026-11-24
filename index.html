@@ -115,7 +115,7 @@
               <tr>
                 <th scope="row">Benchmarks for CUA</th>
                 <td class="work">
-                  <p><a href="https://arxiv.org/abs/2610.27645"><strong>CUA-Recovery</strong></a> <span class="status">(under review at ICLR)</span>: a long-horizon robustness benchmark for computer-use agents.</p>
+                  <p><a href="https://arxiv.org/abs/2610.27645"><strong>OS-Recovery</strong></a> <span class="status">(under review at CVPR)</span>: a benchmark and training set for error recovery of computer-use agents in long-horizon cross-application workflows.</p>
                   <p><a href="https://arxiv.org/abs/2610.22990"><strong>PersonaCUABench</strong></a> <span class="status">(under review at NAACL)</span>: the first benchmark to evaluate how persona influences agent task performance.</p>
                 </td>
                 <td>How robust are computer-use agents over long horizons, and how much does the user's persona change task performance?</td>
@@ -202,6 +202,13 @@
     <section id="news">
       <h2 class="section"><span aria-hidden="true">🔥</span> News</h2>
       <ul class="news" id="news-list">
+        <li>
+          <span class="date">Nov 2026</span>
+          <span class="what"><a href="https://arxiv.org/abs/2610.27645">CUA-Recovery</a> is now OS-Recovery, under review at CVPR 2027:
+            2,250 takeover states built from 619 natural failures of six agents, plus 8.6K recovery trajectories synthesized by ReRail.
+            Fine-tuning Qwen3.5-35B-A3B on them raises recovery by 9.98 points.
+          </span>
+        </li>
         <li>
           <span class="date">Oct 2026</span>
           <span class="what">New preprint:
@@ -365,16 +372,16 @@
         </li>
 
         <li class="has-fig">
-          <a class="pub-fig" href="figures/cua-recovery.jpg"><img src="figures/cua-recovery.jpg" width="1100" height="732" loading="lazy" alt="Overview of the CUA-Recovery benchmark and its construction" /></a>
+          <a class="pub-fig" href="figures/cua-recovery.jpg"><img src="figures/cua-recovery.jpg" width="1100" height="732" loading="lazy" alt="Overview of the OS-Recovery benchmark and its construction" /></a>
           <div class="pub-body">
-            <span class="pub-title"><a href="https://arxiv.org/abs/2610.27645">CUA-Recovery: Benchmarking Error Recovery in Long-Horizon
-              Computer-Use Agents.</a></span>
-            <span class="badge">preprint</span><br />
+            <span class="pub-title"><a href="https://arxiv.org/abs/2610.27645">OS-Recovery &mdash; Latent Failure, Distant Repair: Benchmarking and Data Synthesis
+              for Error Recovery of Computer-Use Agents in Long-Horizon Cross-Application Workflows.</a></span>
+            <span class="badge">under review at CVPR</span><br />
             <span class="pub-authors">
               <span class="me">Xu Hu</span><sup>†</sup>, Haoming Li<sup>†</sup>, Yuxiang Wang, Jinxin Yang,
               Kangshuo Li, Licheng Wang, Dingyi Kang, Jiayu Song, Tianhao Wang, Zhanhua Hu, Xu Yang,
               Qiannan Li, Bingzhe Li, Feng Chen.</span><br>
-            <span class="pub-venue">arXiv preprint arXiv:2610.27645</span>, 2026.<br>
+            <span class="pub-venue">Under review at CVPR 2027</span>. Earlier version on arXiv as CUA-Recovery (arXiv:2610.27645), 2026.<br>
             <span class="pub-links">
               <a href="https://arxiv.org/abs/2610.27645">arXiv</a>
               <a href="https://github.com/xu-hu-2002/CUA-Recovery">code</a>
